@@ -1,0 +1,5 @@
+com/ai/controller/OrderControllerTest.class
+com/ai/controller/UserControllerTest.class
+com/ai/controller/ProductControllerTest.class
+com/ai/service/ProductServiceTest.class
+com/ai/controller/LocationControllerTest.class

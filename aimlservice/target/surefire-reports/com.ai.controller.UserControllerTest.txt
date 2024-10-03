@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.ai.controller.UserControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.264 s <<< FAILURE! -- in com.ai.controller.UserControllerTest
+com.ai.controller.UserControllerTest.testLogin_Success_WithTokenInHeader -- Time elapsed: 0.256 s <<< FAILURE!
+org.mockito.exceptions.verification.TooFewActualInvocations: 
+
+userLoginService.authenticateUserAndGenerateToken(
+    <any com.ai.dto.LoginDto>
+);
+Wanted 2 times:
+-> at com.ai.service.UserLoginService.authenticateUserAndGenerateToken(UserLoginService.java:108)
+But was 1 time:
+-> at com.ai.controller.UserController.login(UserController.java:48)
+
+	at com.ai.service.UserLoginService.authenticateUserAndGenerateToken(UserLoginService.java:108)
+	at com.ai.controller.UserControllerTest.testLogin_Success_WithTokenInHeader(UserControllerTest.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
